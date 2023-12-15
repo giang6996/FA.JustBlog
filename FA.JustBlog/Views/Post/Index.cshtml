@@ -4,30 +4,33 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>All posts!</h1>
+@*<div class="container px-lg-2">*@
+    <h1 class="page-title">All posts!</h1>
 
-<p>
-    <a asp-action="Create">Create New Post</a>
-</p>
+    <p>
+        <a asp-action="Create">Create New Post</a>
+    </p>
 
-<p>
-    <a asp-action="LatestPost">Show Latest Posts</a>
-</p>
+    <p>
+        <a asp-action="LatestPost">Show Latest Posts</a>
+    </p>
+@*</div>*@
+
         
     @foreach (var item in Model)
     {
-        <hr />
-        
+        @*<div class="container px-lg-3">*@
+            <hr/>
             <div>
                 <h2><a asp-area="" asp-controller="Post" asp-action="Detail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a></h2>
             </div>
-            
+
             <div>
                 <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:larger">@Html.DisplayFor(modelItem => item.ShortDescription)</p>
             </div>
 
             <div>
-            <p style="font-size:smaller; color:gray">
+                <p style="font-size:smaller; color:gray">
                     Posted @Html.DisplayFor(modelItem => item.PublishedDate) with rate @Html.DisplayFor(modelItem => item.Rate) by
                     @Html.DisplayFor(modelItem => item.ViewCount) views
                 </p>
@@ -37,6 +40,8 @@
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
             </div>
+        @*</div>*@
+        
        
     }
 
