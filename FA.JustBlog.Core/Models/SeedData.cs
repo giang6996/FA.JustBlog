@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FA.JustBlog.Core.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using FA.JustBlog.Core.Models;
 
 
 namespace FA.JustBlog.Core
 {
-    public class SeedData
+	public class SeedData
     {
         private readonly JustBlogDbContext _context;
 
@@ -36,10 +30,17 @@ namespace FA.JustBlog.Core
                 // Tags
                 var tags = new List<Tag>
                 {
-                    new Tag { Name = "Programming", UrlSlug = "programming", Description = "Posts related to programming", Count = 0 },
-                    new Tag { Name = "Adventure", UrlSlug = "adventure", Description = "Posts related to adventure", Count = 0 },
-                    new Tag { Name = "Recipes", UrlSlug = "recipes", Description = "Posts related to recipes", Count = 0 }
-                };
+                    new Tag { Name = "#Programming", UrlSlug = "programming", Description = "Posts related to programming", Count = 0 },
+                    new Tag { Name = "#Adventure", UrlSlug = "adventure", Description = "Posts related to adventure", Count = 0 },
+                    new Tag { Name = "#Recipes", UrlSlug = "recipes", Description = "Posts related to recipes", Count = 0 },
+					new Tag { Name = "#World", UrlSlug = "world", Description = "Posts related to world", Count = 0 },
+					new Tag { Name = "#Local", UrlSlug = "local", Description = "Posts related to local", Count = 0 },
+					new Tag { Name = "#Business", UrlSlug = "business", Description = "Posts related to business", Count = 0 },
+					new Tag { Name = "#Media", UrlSlug = "media", Description = "Posts related to media", Count = 0 },
+					new Tag { Name = "#Technology", UrlSlug = "technology", Description = "Posts related to technology", Count = 0 },
+					new Tag { Name = "#Politic", UrlSlug = "politic", Description = "Posts related to politic", Count = 0 },
+					new Tag { Name = "#Education", UrlSlug = "education", Description = "Posts related to education", Count = 0 }
+				};
                 _context.Tags.AddRange(tags);
                 _context.SaveChanges();
 

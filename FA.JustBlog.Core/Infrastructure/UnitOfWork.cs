@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FA.JustBlog.Core.Models;
+﻿using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core.Repositories;
 
 namespace FA.JustBlog.Core
 {
-    public class UnitOfWork : IUnitOfWork
+	public class UnitOfWork : IUnitOfWork
     {
         private readonly JustBlogDbContext _dbContext;
         private ICategoryRepository _categoryRepository;

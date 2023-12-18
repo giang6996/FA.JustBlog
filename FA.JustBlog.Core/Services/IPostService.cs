@@ -24,6 +24,7 @@ namespace FA.JustBlog.Core
         IList<Post> GetUnpublisedPosts();
 
         IList<Post> GetLatestPost(int size);
+
         IList<Post> GetLatestPost();
 
         IList<Post> GetPostsByMonth(DateTime monthYear);

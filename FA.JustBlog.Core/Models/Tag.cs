@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FA.JustBlog.Core
 {
-    public class Tag : BaseEntity
+	public class Tag : BaseEntity
     {
         [Required(ErrorMessage = "The {0} is required")]
         [StringLength(255, ErrorMessage = "The {0} must between {2} and {1} characters", MinimumLength = 3)]

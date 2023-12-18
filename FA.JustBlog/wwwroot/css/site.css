@@ -28,3 +28,9 @@ hr {
 .page-title {
     color: #0085A1;
 }
+
+.tag-box {
+    padding: 15px;
+    background-color: black;
+    color: white;
+}

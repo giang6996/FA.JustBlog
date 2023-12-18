@@ -26,3 +26,17 @@ C:\Users\Admin\Documents\C#\Entity Framework\FA.JustBlog-DUC\FA.JustBlog.Core\ob
 C:\Users\Admin\Documents\C#\Entity Framework\FA.JustBlog-DUC\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.pdb
 C:\Users\Admin\Documents\C#\Entity Framework\FA.JustBlog-DUC\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.genruntimeconfig.cache
 C:\Users\Admin\Documents\C#\Entity Framework\FA.JustBlog-DUC\FA.JustBlog.Core\obj\Debug\net6.0\ref\FA.JustBlog.Core.dll
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.deps.json
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.runtimeconfig.json
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.dll
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.pdb
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.csproj.AssemblyReference.cache
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.AssemblyInfoInputs.cache
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.AssemblyInfo.cs
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.dll
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\refint\FA.JustBlog.Core.dll
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.pdb
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.genruntimeconfig.cache
+C:\Users\nggng\Documents\FPT\Code\FA.JustBlog - Mock\FA.JustBlog.Core\obj\Debug\net6.0\ref\FA.JustBlog.Core.dll

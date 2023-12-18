@@ -1,18 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FA.JustBlog.Core.Models
 {
-    public class JustBlogDbContext : DbContext
+	public class JustBlogDbContext : DbContext
     {
         public JustBlogDbContext()
         {
 
         }
+
         public JustBlogDbContext(DbContextOptions options) : base(options)
         {
         }
@@ -26,7 +22,6 @@ namespace FA.JustBlog.Core.Models
         public DbSet<PostTagMap> PostTags { get; set; }
 
         public DbSet<Comment> Comments { get; set; }
-
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -42,10 +37,11 @@ namespace FA.JustBlog.Core.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("server=ANHDUCPC\\ANHDUC;database=JustBlogDb2;Trusted_connection=True;" +
+                optionsBuilder.UseSqlServer("server=.;database=JustBlogDb2;Trusted_connection=True;" +
                "TrustServerCertificate=True");
             }
         }
+
         //public override int SaveChanges()
         //{
         //    BeforeSaveChanges();

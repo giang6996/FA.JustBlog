@@ -3,7 +3,7 @@ using FA.JustBlog.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
 var optionsBuilder = new DbContextOptionsBuilder<JustBlogDbContext>();
-optionsBuilder.UseSqlServer("server=ANHDUCPC\\ANHDUC;database=JustBlogDb2;Trusted_connection=True;" +
+optionsBuilder.UseSqlServer("server=.;database=JustBlogDb2;Trusted_connection=True;" +
                "TrustServerCertificate=True");
 
 using (JustBlogDbContext dbContext = new JustBlogDbContext(optionsBuilder.Options))

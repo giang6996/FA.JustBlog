@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FA.JustBlog.Core
 {
-    public class Post : BaseEntity
+	public class Post : BaseEntity
     {
         [StringLength(255, ErrorMessage = "The {0} must between {2} and {1} characters", MinimumLength = 3)]
         public string? Title { get; set; }
@@ -42,6 +37,5 @@ namespace FA.JustBlog.Core
         public virtual Category Category { get; set; }
 
         public virtual ICollection<PostTagMap> PostTags { get; set; }
-
     }
 }
