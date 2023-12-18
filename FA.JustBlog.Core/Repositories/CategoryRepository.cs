@@ -11,8 +11,15 @@ namespace FA.JustBlog.Core
     {
         public CategoryRepository(JustBlogDbContext dbContext) : base(dbContext)
         {
+
         }
 
-        
+        public Category GetByName(string name)
+        {
+            return _entitySet
+                .Where(p => p.Name == name).FirstOrDefault();
+        }
+
+
     }
 }

@@ -21,6 +21,11 @@ namespace FA.JustBlog.Core
             return _unitOfWork.CategoryRepository.Find(id);
         }
 
+        public Category FindByName(string name)
+        {
+            return _unitOfWork.CategoryRepository.GetByName(name);
+        }
+
         public void Add(Category category)
         {
             _unitOfWork.CategoryRepository.Add(category);

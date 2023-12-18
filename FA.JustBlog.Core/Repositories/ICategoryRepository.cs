@@ -8,6 +8,7 @@ namespace FA.JustBlog.Core
 {
     public interface ICategoryRepository : IGenericRepository<Category>
     {
+        Category GetByName (string name);
         
     }
 }

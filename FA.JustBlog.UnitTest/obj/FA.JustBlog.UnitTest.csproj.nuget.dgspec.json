@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj": {}
+    "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj": {
+    "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
         "projectName": "FA.JustBlog.Core",
-        "projectPath": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
-        "packagesPath": "C:\\Users\\nggng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nggng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,8 +61,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,21 +70,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj": {
+    "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj",
         "projectName": "FA.JustBlog.UnitTest",
-        "projectPath": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\nggng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.UnitTest\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.UnitTest\\FA.JustBlog.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nggng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -99,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj": {
-                "projectPath": "C:\\Users\\nggng\\Documents\\FPT\\Code\\FA.JustBlog - Mock\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj"
+              "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj"
               }
             }
           }
@@ -146,8 +145,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -156,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

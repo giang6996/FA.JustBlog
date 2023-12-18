@@ -70,6 +70,31 @@ namespace FA.JustBlog.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult DetailName(string name)
+        {
+            try
+            {
+                var category = _categoryService.FindByName(name);
+                if (category != null)
+                {
+                    var categoryVms = new CategoryViewModel()
+                    {
+                        Id = category.Id,
+                        Name = category.Name,
+                        UrlSlug = category.UrlSlug,
+                        Description = category.Description,
+                    };
+                    return View(categoryVms);
+                }
+            }
+            catch
+            {
+
+            }
+            return RedirectToAction("Index");
+        }
+
+
         public ActionResult Edit(int id)
         {
             try

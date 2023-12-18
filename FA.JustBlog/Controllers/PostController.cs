@@ -63,6 +63,33 @@ namespace FA.JustBlog.Controllers
             return View(postVm);
         }
 
+        public ActionResult DetailDate(int year, int month, string title)
+        {
+            var post = _postService.FindPost(year, month, title);
+            if (post != null)
+            {
+                var postVm = new PostViewModel()
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    ShortDescription = post.ShortDescription,
+                    ImageUrl = post.ImageUrl,
+                    PostContent = post.PostContent,
+                    UrlSlug = post.UrlSlug,
+                    Published = post.Published,
+                    PublishedDate = post.PublishedDate,
+                    ViewCount = post.ViewCount,
+                    RateCount = post.RateCount,
+                    TotalRate = post.TotalRate,
+                    CategoryId = post.CategoryId,
+                };
+                return View(postVm);
+            }
+            return View();  
+
+            
+        }
+
         public IActionResult LatestPost()
         {
             IList<Post> sortedposts = _postService.GetLatestPost();

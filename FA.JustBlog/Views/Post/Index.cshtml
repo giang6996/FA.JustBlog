@@ -22,7 +22,7 @@
         @*<div class="container px-lg-3">*@
             <hr/>
             <div>
-                <h2><a asp-area="" asp-controller="Post" asp-action="Detail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a></h2>
+                <h2><a asp-area="" asp-controller="Post" asp-action="Detail" asp-route-id="@item.Id">@Html.ActionLink(item.Title, "DetailDate","Post" , new{year = item.PublishedDate.Year, month = item.PublishedDate.Month.ToString("00"), title = item.UrlSlug}, null)</a></h2>
             </div>
 
             <div>
@@ -37,6 +37,8 @@
             </div>
 
             <div>
+                
+
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
             </div>
