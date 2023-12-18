@@ -11,6 +11,7 @@ namespace FA.JustBlog.Controllers
         {
             _tagService = tagService;
         }
+
         public IActionResult Index()
         {
             var tags = _tagService.GetAll();
@@ -136,5 +137,28 @@ namespace FA.JustBlog.Controllers
             }
             return RedirectToAction("Index");
         }
-    }
+
+		public PartialViewResult _PartialAboutCard()
+		{
+			var tag = _tagService.GetTopTags();
+
+			var tagVm = new List<TagViewModel>();
+            if (tag != null) 
+            {
+				foreach (var item in tag)
+				{
+					tagVm.Add(new TagViewModel()
+					{
+						Id = item.Id,
+						Name = item.Name,
+						UrlSlug = item.UrlSlug,
+						Description = item.Description,
+						Count = item.Count
+					});
+				}
+			}
+
+			return PartialView(tagVm);
+		}
+	}
 }

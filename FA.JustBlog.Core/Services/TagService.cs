@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FA.JustBlog.Core
+﻿namespace FA.JustBlog.Core
 {
     public class TagService : ITagService
     {
@@ -51,6 +45,11 @@ namespace FA.JustBlog.Core
         public Tag GetTagByUrlSlug(string urlSlug)
         {
             return _unitOfWork.TagRepository.GetTagByUrlSlug(urlSlug);
+        }
+
+        public IList<Tag> GetTopTags()
+        {
+            return _unitOfWork.TagRepository.GetAll().Take(10).OrderBy(x => x.Name).ToList();
         }
     }
 }

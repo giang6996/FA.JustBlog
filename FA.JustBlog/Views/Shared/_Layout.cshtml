@@ -54,7 +54,7 @@
                 @RenderBody()
             </div>
             <div class="container col-lg-3">
-                @await Html.PartialAsync("~/Views/Home/_PartialAboutCard.cshtml")
+                @await Html.PartialAsync("~/Views/Home/_PartialAboutCard.cshtml",TempData["Tags"])
             </div>
         </div>
     </div>
