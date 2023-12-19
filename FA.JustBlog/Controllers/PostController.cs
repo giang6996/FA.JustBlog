@@ -17,35 +17,53 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
             _categoryService = categoryService;
         }
-        public IActionResult Index(int? page)
+        public IActionResult Index(int? page, int postCategory = 0)
         {
-			int pageNum = page ?? 1;
-			int pageSize = 1;
+            IList<Post> posts;
+            int pageNum = page ?? 1;
+			      int pageSize = 1;
+            var category = _categoryService.GetAll();
+            var categoryVms = new List<CategoryViewModel>();
+            foreach (var item in category)
+            {
+                categoryVms.Add(new CategoryViewModel()
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                });
+            }
+            TempData["Categorys"] = categoryVms;
 
-			var posts = _postService.GetAll();
+            if(postCategory == 0)
+            {
+                posts = _postService.GetAll();
+            }
+            else
+            {
+                posts = _postService.GetPostsByCategory(postCategory);
+            }
+            var postVms = new List<PostViewModel>();
+            foreach (var post in posts)
+            {
+                postVms.Add(new PostViewModel()
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    ShortDescription = post.ShortDescription,
+                    ImageUrl = post.ImageUrl,
+                    PostContent = post.PostContent,
+                    UrlSlug = post.UrlSlug,
+                    Published = post.Published,
+                    PublishedDate = post.PublishedDate,
+                    ViewCount = post.ViewCount,
+                    RateCount = post.RateCount,
+                    TotalRate = post.TotalRate,
+                    CategoryId = post.CategoryId,
+                });
+            }
+            return View(postVms.ToPagedList(pageNum, pageSize));
+        }
 
-			var postVms = new List<PostViewModel>();
-			foreach (var post in posts)
-			{
-				postVms.Add(new PostViewModel()
-				{
-					Id = post.Id,
-					Title = post.Title,
-					ShortDescription = post.ShortDescription,
-					ImageUrl = post.ImageUrl,
-					PostContent = post.PostContent,
-					UrlSlug = post.UrlSlug,
-					Published = post.Published,
-					PublishedDate = post.PublishedDate,
-					ViewCount = post.ViewCount,
-					RateCount = post.RateCount,
-					TotalRate = post.TotalRate,
-					CategoryId = post.CategoryId,
-				});
-			}
-
-			return View(postVms.ToPagedList(pageNum, pageSize));
-		}
 
         public ActionResult Detail(int id)
         {

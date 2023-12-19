@@ -144,6 +144,26 @@ namespace FA.JustBlog.Controllers
             }
         }
 
+        public PartialViewResult _CategoryDropdown()
+        {
+            var category = _categoryService.GetAll();
+
+            var categoryVm = new List<CategoryViewModel>();
+            if (category != null)
+            {
+                foreach (var item in category)
+                {
+                    categoryVm.Add(new CategoryViewModel()
+                    {
+                        Id = item.Id,
+                        Name = item.Name,
+                    });
+                }
+            }
+
+            return PartialView(categoryVm);
+        }
+
         public ActionResult Delete(int id)
         {
             try

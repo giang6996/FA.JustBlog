@@ -64,6 +64,12 @@ namespace FA.JustBlog.Core
             return _entitySet.Where(p => p.Category.Name == category).ToList();
         }
 
+        public IList<Post> GetPostsByCategory(int id)
+        {
+            // Implement logic to get posts by category
+            return _entitySet.Where(p => p.Category.Id == id).ToList();
+        }
+
         public int CountPostsForTag(string tag)
         {
             // Implement logic to count posts for a tag

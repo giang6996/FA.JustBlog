@@ -16,6 +16,8 @@ namespace FA.JustBlog.Core
         IList<Post> GetPostsByMonth(DateTime monthYear);
         int CountPostsForCategory(string category);
         IList<Post> GetPostsByCategory(string category);
+
+        IList<Post> GetPostsByCategory(int id);
         int CountPostsForTag(string tag);
         IList<Post> GetPostsByTag(string tag);
         IList<Post> GetMostViewedPost(int size);

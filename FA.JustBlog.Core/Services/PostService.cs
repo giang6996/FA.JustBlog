@@ -87,10 +87,17 @@ namespace FA.JustBlog.Core
             
         }
 
+
         public IList<Post> GetPostsByCategory(string category)
         {
             return _unitOfWork.PostRepository.GetPostsByCategory(category);
            
+        }
+
+        public IList<Post> GetPostsByCategory(int id)
+        {
+            return _unitOfWork.PostRepository.GetPostsByCategory(id);
+
         }
 
         public int CountPostsForTag(string tag)
