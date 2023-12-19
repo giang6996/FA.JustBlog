@@ -35,7 +35,9 @@ namespace FA.JustBlog.Controllers
 					});
 				}
 			}
+
 			TempData["Tags"] = tagVm;
+
 			return View();
         }
 

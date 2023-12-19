@@ -21,15 +21,14 @@
 	</p>
 </div>
 
-<div style="text-align:justify">
+<div style="position-relative text-center">
 	@if (Model != null)
 	{
 		foreach (var item in Model)
 		{
-			<div class="col-4 tag-box">
+			<span class="tag-box">
 				@Html.DisplayFor(modelItem => item.Name)
-			</div>
+			</span>
 		}
 	}
-
 </div>
