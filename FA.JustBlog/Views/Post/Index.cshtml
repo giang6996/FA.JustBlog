@@ -1,4 +1,4 @@
-﻿@model IEnumerable<FA.JustBlog.Models.PostViewModel>
+﻿@model PagedList.IPagedList<FA.JustBlog.Models.PostViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -42,9 +42,31 @@
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
             </div>
-        @*</div>*@
-        
-       
+        @*</div>*@     
     }
+
+<div class="pagination">
+    @if (Model.HasPreviousPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+    }
+
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (Model.PageNumber == i)
+        {
+            <span>@i</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Index", new { page = i })">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+    }
+</div>
 
 

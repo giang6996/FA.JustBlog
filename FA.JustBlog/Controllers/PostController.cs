@@ -3,6 +3,7 @@ using FA.JustBlog.Core;
 using FA.JustBlog.Models;
 using System.Security.Policy;
 using Humanizer.Localisation;
+using PagedList;
 
 namespace FA.JustBlog.Controllers
 {
@@ -16,31 +17,35 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
             _categoryService = categoryService;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            var posts = _postService.GetAll();
+			int pageNum = page ?? 1;
+			int pageSize = 1;
 
-            var postVms = new List<PostViewModel>();
-            foreach (var post in posts)
-            {
-                postVms.Add(new PostViewModel()
-                {
-                    Id = post.Id,
-                    Title = post.Title,
-                    ShortDescription = post.ShortDescription,
-                    ImageUrl = post.ImageUrl,
-                    PostContent = post.PostContent,
-                    UrlSlug = post.UrlSlug,
-                    Published = post.Published,
-                    PublishedDate = post.PublishedDate,
-                    ViewCount = post.ViewCount,
-                    RateCount = post.RateCount,
-                    TotalRate = post.TotalRate,
-                    CategoryId = post.CategoryId,
-                });
-            }
-            return View(postVms);
-        }
+			var posts = _postService.GetAll();
+
+			var postVms = new List<PostViewModel>();
+			foreach (var post in posts)
+			{
+				postVms.Add(new PostViewModel()
+				{
+					Id = post.Id,
+					Title = post.Title,
+					ShortDescription = post.ShortDescription,
+					ImageUrl = post.ImageUrl,
+					PostContent = post.PostContent,
+					UrlSlug = post.UrlSlug,
+					Published = post.Published,
+					PublishedDate = post.PublishedDate,
+					ViewCount = post.ViewCount,
+					RateCount = post.RateCount,
+					TotalRate = post.TotalRate,
+					CategoryId = post.CategoryId,
+				});
+			}
+
+			return View(postVms.ToPagedList(pageNum, pageSize));
+		}
 
         public ActionResult Detail(int id)
         {
