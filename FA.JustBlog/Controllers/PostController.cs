@@ -95,9 +95,12 @@ namespace FA.JustBlog.Controllers
             
         }
 
-        public IActionResult LatestPost()
+        public IActionResult LatestPost(int? page)
         {
-            IList<Post> sortedposts = _postService.GetLatestPost();
+			int pageNum = page ?? 1;
+			int pageSize = 1;
+
+			IList<Post> sortedposts = _postService.GetLatestPost();
 
             List<Post> postVms = new List<Post>();
             foreach (var post in sortedposts)
@@ -118,8 +121,9 @@ namespace FA.JustBlog.Controllers
                     CategoryId = post.CategoryId,
                 });
             }
-            return View(sortedposts);
-        }
+
+			return View(postVms.ToPagedList(pageNum, pageSize));
+		}
 
         public ActionResult Create()
         {

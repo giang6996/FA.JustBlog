@@ -8,6 +8,7 @@ namespace FA.JustBlog.Controllers
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
+
         public CategoryController(ICategoryService categoryService)
         {
             _categoryService = categoryService;
@@ -26,6 +27,7 @@ namespace FA.JustBlog.Controllers
                     Description = category.Description,
                 });
             }
+
             return View(categoryVms);
         }
 
