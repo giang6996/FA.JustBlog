@@ -16,7 +16,9 @@
     </p>
 @*</div>*@
 
-        
+        @await Html.PartialAsync("~/Views/Category/_CategoryDropdown.cshtml",TempData["Categorys"])
+
+
     @foreach (var item in Model)
     {
         @*<div class="container px-lg-3">*@

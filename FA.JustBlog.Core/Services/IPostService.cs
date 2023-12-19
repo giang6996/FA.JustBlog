@@ -33,6 +33,8 @@ namespace FA.JustBlog.Core
 
         IList<Post> GetPostsByCategory(string category);
 
+        IList<Post> GetPostsByCategory(int id);
+
         int CountPostsForTag(string tag);
 
         IList<Post> GetPostsByTag(string tag);

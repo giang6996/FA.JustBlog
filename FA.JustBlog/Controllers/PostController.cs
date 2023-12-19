@@ -16,10 +16,29 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
             _categoryService = categoryService;
         }
-        public IActionResult Index()
+        public IActionResult Index(int postCategory = 0)
         {
-            var posts = _postService.GetAll();
+            IList<Post> posts;
+            var category = _categoryService.GetAll();
+            var categoryVms = new List<CategoryViewModel>();
+            foreach (var item in category)
+            {
+                categoryVms.Add(new CategoryViewModel()
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                });
+            }
+            TempData["Categorys"] = categoryVms;
 
+            if(postCategory == 0)
+            {
+                posts = _postService.GetAll();
+            }
+            else
+            {
+                posts = _postService.GetPostsByCategory(postCategory);
+            }
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
             {
