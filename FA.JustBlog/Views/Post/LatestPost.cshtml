@@ -1,4 +1,4 @@
-﻿@model IEnumerable<FA.JustBlog.Core.Post>
+﻿@model PagedList.IPagedList<FA.JustBlog.Core.Post>
 
 @{
     ViewData["Title"] = "Latest Posts";
@@ -50,6 +50,30 @@
         </div>
     }
 </ul>
+
+<div class="pagination">
+    @if (Model.HasPreviousPage)
+    {
+        <a href="@Url.Action("LatestPost", new { page = Model.PageNumber - 1 })">Previous</a>
+    }
+
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (Model.PageNumber == i)
+        {
+            <span>@i</span>
+        }
+        else
+        {
+            <a href="@Url.Action("LatestPost", new { page = i })">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a href="@Url.Action("LatestPost", new { page = Model.PageNumber + 1 })">Next</a>
+    }
+</div>
 
 @*<style>
     ul {

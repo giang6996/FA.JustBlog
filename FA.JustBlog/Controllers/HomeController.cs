@@ -18,24 +18,6 @@ namespace FA.JustBlog.Controllers
 
 		public IActionResult Index()
         {
-			var tag = _tagService.GetTopTags();
-
-			var tagVm = new List<TagViewModel>();
-			if (tag != null)
-			{
-				foreach (var item in tag)
-				{
-					tagVm.Add(new TagViewModel()
-					{
-						Id = item.Id,
-						Name = item.Name,
-						UrlSlug = item.UrlSlug,
-						Description = item.Description,
-						Count = item.Count
-					});
-				}
-			}
-			TempData["Tags"] = tagVm;
 			return View();
         }
 

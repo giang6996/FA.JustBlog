@@ -8,7 +8,6 @@ namespace FA.JustBlog.Core
 {
     public interface ICategoryService
     {
-
         IList<Category> GetAll();
 
         Category FindByName(string name);

@@ -3,6 +3,7 @@ using FA.JustBlog.Core;
 using FA.JustBlog.Models;
 using System.Security.Policy;
 using Humanizer.Localisation;
+using PagedList;
 
 namespace FA.JustBlog.Controllers
 {
@@ -16,9 +17,11 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
             _categoryService = categoryService;
         }
-        public IActionResult Index(int postCategory = 0)
+        public IActionResult Index(int? page, int postCategory = 0)
         {
             IList<Post> posts;
+            int pageNum = page ?? 1;
+			      int pageSize = 1;
             var category = _categoryService.GetAll();
             var categoryVms = new List<CategoryViewModel>();
             foreach (var item in category)
@@ -58,8 +61,9 @@ namespace FA.JustBlog.Controllers
                     CategoryId = post.CategoryId,
                 });
             }
-            return View(postVms);
+            return View(postVms.ToPagedList(pageNum, pageSize));
         }
+
 
         public ActionResult Detail(int id)
         {
@@ -109,9 +113,12 @@ namespace FA.JustBlog.Controllers
             
         }
 
-        public IActionResult LatestPost()
+        public IActionResult LatestPost(int? page)
         {
-            IList<Post> sortedposts = _postService.GetLatestPost();
+			int pageNum = page ?? 1;
+			int pageSize = 1;
+
+			IList<Post> sortedposts = _postService.GetLatestPost();
 
             List<Post> postVms = new List<Post>();
             foreach (var post in sortedposts)
@@ -132,8 +139,9 @@ namespace FA.JustBlog.Controllers
                     CategoryId = post.CategoryId,
                 });
             }
-            return View(sortedposts);
-        }
+
+			return View(postVms.ToPagedList(pageNum, pageSize));
+		}
 
         public ActionResult Create()
         {
