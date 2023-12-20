@@ -22,5 +22,6 @@ namespace FA.JustBlog.Core
         IList<Post> GetPostsByTag(string tag);
         IList<Post> GetMostViewedPost(int size);
         IList<Post> GetHighestPosts(int size);
+        IList<Post> SearchByTitle(string title);
     }
 }
