@@ -8,109 +8,109 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FA.JustBlog
 build_property.RootNamespace = FA.JustBlog
-build_property.ProjectDir = C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\
+build_property.ProjectDir = D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog
+build_property.MSBuildProjectDirectory = D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Create.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Detail.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/DetailName.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/DetailName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsTmFtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Edit.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Index.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/_CategoryDropdown.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Category/_CategoryDropdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX0NhdGVnb3J5RHJvcGRvd24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Home/Index.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Home/Privacy.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Home/_PartialAboutCard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUGFydGlhbEFib3V0Q2FyZC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Create.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Detail.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/DetailDate.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/DetailDate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxEYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Edit.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Index.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/LatestPost.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Post/LatestPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxMYXRlc3RQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/Error.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Shared/Components/TagList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_PartialFooter.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Shared/_PartialFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Create.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Tag/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Detail.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Tag/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Edit.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Tag/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Index.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Tag/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/_ViewImports.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/_ViewStart.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_Layout.cshtml]
+[D:/Intern Fsoft (dotnet)/Final Project - 2/FA.JustBlog/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5fmvclbnwr
