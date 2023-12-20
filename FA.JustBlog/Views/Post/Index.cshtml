@@ -52,21 +52,24 @@
         @*</div>*@     
     }
 
-<div class="pagination">
+<hr />
+<div>
+    <p>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</p>
+
     @if (Model.HasPreviousPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })" class="paged-list">Previous</a>
     }
 
     @for (int i = 1; i <= Model.PageCount; i++)
     {
         if (Model.PageNumber == i)
         {
-            <span>@i</span>
+            <span class="paged-list">@i</span>
         }
         else
         {
-            <a href="@Url.Action("Index", new { page = i })">@i</a>
+            <a href="@Url.Action("Index", new { page = i })" class="paged-list">@i</a>
         }
     }
 
