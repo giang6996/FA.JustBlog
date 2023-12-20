@@ -1187,3 +1187,5 @@ C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\obj\Debug\net6.0\scoped
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.csproj.CopyComplete
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\obj\Debug\net6.0\FA.JustBlog.genruntimeconfig.cache
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\obj\Debug\net6.0\ref\FA.JustBlog.dll
+C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\bin\Debug\net6.0\PagedList.dll
+C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\bin\Debug\net6.0\PagedList.Mvc.dll
