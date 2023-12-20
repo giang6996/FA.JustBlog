@@ -17,11 +17,11 @@ namespace FA.JustBlog.Controllers
             _postService = postService;
             _categoryService = categoryService;
         }
-        public IActionResult Index(int? page, int postCategory = 0)
+        public IActionResult Index(int? page, int postCategory = 0, string title = "abcd")
         {
             IList<Post> posts;
             int pageNum = page ?? 1;
-			      int pageSize = 1;
+            int pageSize = 3;
             var category = _categoryService.GetAll();
             var categoryVms = new List<CategoryViewModel>();
             foreach (var item in category)
@@ -34,14 +34,22 @@ namespace FA.JustBlog.Controllers
             }
             TempData["Categorys"] = categoryVms;
 
-            if(postCategory == 0)
+
+
+            if (postCategory != 0)
             {
-                posts = _postService.GetAll();
+                posts = _postService.GetPostsByCategory(postCategory);
+
+            }
+            else if (title != "abcd")
+            {
+                posts = _postService.SearchByTitle(title);
             }
             else
             {
-                posts = _postService.GetPostsByCategory(postCategory);
+                posts = _postService.GetAll();
             }
+
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
             {
@@ -251,30 +259,7 @@ namespace FA.JustBlog.Controllers
             }
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, string title, string shortDescription, int categoryId)
-        //{
-        //    try
-        //    {
-        //        var findPost = _postService.Find(id);
-        //        if (findPost != null)
-        //        {
-        //            findPost.Id = id;
-        //            findPost.Title = title;
-        //            findPost.ShortDescription = shortDescription;
-        //            findPost.CategoryId = categoryId;
 
-        //        _postService.Update(findPost);
-        //        }
-
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
 
         public ActionResult Delete(int id)
         {
@@ -289,5 +274,36 @@ namespace FA.JustBlog.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        public ActionResult PostsByTag(string tagName, int? page)
+        {
+            int pageNum = page ?? 1;
+            int pageSize = 3;
+
+            var posts = _postService.GetPostsByTag(tagName);
+
+            var postVms = new List<PostViewModel>();
+            foreach (var post in posts)
+            {
+                postVms.Add(new PostViewModel()
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    ShortDescription = post.ShortDescription,
+                    ImageUrl = post.ImageUrl,
+                    PostContent = post.PostContent,
+                    UrlSlug = post.UrlSlug,
+                    Published = post.Published,
+                    PublishedDate = post.PublishedDate,
+                    ViewCount = post.ViewCount,
+                    RateCount = post.RateCount,
+                    TotalRate = post.TotalRate,
+                    CategoryId = post.CategoryId,
+                });
+            }
+
+            return View(postVms.ToPagedList(pageNum, pageSize));
+        }
     }
 }
+
