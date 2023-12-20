@@ -34,11 +34,10 @@ namespace FA.JustBlog.Controllers
             }
             TempData["Categorys"] = categoryVms;
 
-
-
             if (postCategory != 0)
             {
                 posts = _postService.GetPostsByCategory(postCategory);
+                
 
             }
             else if (title != "abcd")
@@ -49,6 +48,8 @@ namespace FA.JustBlog.Controllers
             {
                 posts = _postService.GetAll();
             }
+
+            TempData["CategoryName"] = postCategory;
 
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
