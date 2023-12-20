@@ -3,7 +3,7 @@
 <form id="myForm" method="get" action="/Post/Index" onchange="document.getElementById('myForm').submit();">
 
   <select class="form-control" id="category" name="postCategory">
-    <option disabled>Select category</option>
+    <option selected disabled>Select category</option>
     <option value="0">Select all</option>
     @foreach (var item in Model) {
       <option value="@item.Id">@item.Name</option>
