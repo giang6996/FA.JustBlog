@@ -21,7 +21,7 @@ namespace FA.JustBlog.Controllers
         {
             IList<Post> posts;
             int pageNum = page ?? 1;
-			      int pageSize = 1;
+			      int pageSize = 3;
             var category = _categoryService.GetAll();
             var categoryVms = new List<CategoryViewModel>();
             foreach (var item in category)
@@ -116,7 +116,7 @@ namespace FA.JustBlog.Controllers
         public IActionResult LatestPost(int? page)
         {
 			int pageNum = page ?? 1;
-			int pageSize = 1;
+			int pageSize = 3;
 
 			IList<Post> sortedposts = _postService.GetLatestPost();
 
