@@ -126,5 +126,10 @@ namespace FA.JustBlog.Core
         {
             return _unitOfWork.PostRepository.GetLatestPost();
         }
+
+        public IList<Post> SearchByTitle(string title)
+        {
+            return _unitOfWork.PostRepository.SearchByTitle(title);
+        }
     }
 }
