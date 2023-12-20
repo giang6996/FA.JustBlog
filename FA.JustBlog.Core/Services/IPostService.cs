@@ -41,6 +41,7 @@ namespace FA.JustBlog.Core
 
         IList<Post> GetMostViewedPost(int size);
         IList<Post> GetHighestPosts(int size);
+        IList<Post> SearchByTitle(string title);
 
 
     }
