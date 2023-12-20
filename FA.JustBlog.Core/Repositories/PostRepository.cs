@@ -93,6 +93,13 @@ namespace FA.JustBlog.Core
             // Implement logic to get the highest-rated posts
             return _dbContext.Posts.OrderByDescending(p => p.Rate).Take(size).ToList();
         }
+
+        public IList<Post> SearchByTitle(string title)
+        {
+            var posts = _entitySet.Where(p => p.Title.Contains(title)).ToList();
+
+            return posts;
+        }
     }
 
 }
