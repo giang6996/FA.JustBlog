@@ -58,7 +58,7 @@
 
     @if (Model.HasPreviousPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1, postCategory = TempData["CategoryName"] })" class="paged-list">Previous</a>
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"] })" class="paged-list">Previous</a>
     }
 
     @for (int i = 1; i <= Model.PageCount; i++)
@@ -69,13 +69,13 @@
         }
         else
         {
-            <a href="@Url.Action("Index", new { page = i, postCategory = TempData["CategoryName"] })" class="paged-list">@i</a>
+            <a href="@Url.Action("Index", new { page = i, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"]})" class="paged-list">@i</a>
         }
     }
 
     @if (Model.HasNextPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1, postCategory = TempData["CategoryName"] })">Next</a>
+        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"] })">Next</a>
     }
 </div>
 

@@ -50,6 +50,7 @@ namespace FA.JustBlog.Controllers
             }
 
             TempData["CategoryName"] = postCategory;
+            TempData["PostSearchName"] = title;
 
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
