@@ -30,23 +30,23 @@ namespace FA.JustBlog.Controllers
             return View(tagVms);
         }
 
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        public IActionResult Create(string name, string urlSlug, string description, int count)
-        {
-            _tagService.Add(new Tag()
-            {
-                Name = name,
-                UrlSlug = urlSlug,
-                Description = description,
-                Count = count
-            });
-            return RedirectToAction("Index");
-        }
+        //[HttpPost]
+        //public IActionResult Create(string name, string urlSlug, string description, int count)
+        //{
+        //    _tagService.Add(new Tag()
+        //    {
+        //        Name = name,
+        //        UrlSlug = urlSlug,
+        //        Description = description,
+        //        Count = count
+        //    });
+        //    return RedirectToAction("Index");
+        //}
 
         public ActionResult Detail(int id)
         {
@@ -73,69 +73,68 @@ namespace FA.JustBlog.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Edit(int id)
-        {
-            try
-            {
-                var tag = _tagService.Find(id);
-                if (tag != null)
-                {
-                    var tagModel = new TagViewModel()
-                    {
-                        Name = tag.Name,
-                        UrlSlug = tag.UrlSlug,
-                        Description = tag.Description,
-                        Count = tag.Count
-                    };
-                    return View(tagModel);
-                }
-            }
-            catch
-            {
-            }
+        //public ActionResult Edit(int id)
+        //{
+        //    try
+        //    {
+        //        var tag = _tagService.Find(id);
+        //        if (tag != null)
+        //        {
+        //            var tagModel = new TagViewModel()
+        //            {
+        //                Name = tag.Name,
+        //                UrlSlug = tag.UrlSlug,
+        //                Description = tag.Description,
+        //                Count = tag.Count
+        //            };
+        //            return View(tagModel);
+        //        }
+        //    }
+        //    catch
+        //    {
+        //    }
 
-            return RedirectToAction(nameof(Index));
-        }
+        //    return RedirectToAction(nameof(Index));
+        //}
+
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Edit(int id, TagViewModel tagViewModel)
+        //{
+        //    try
+        //    {
+        //        var tag = new Tag()
+        //        {
+        //            Id = id,
+        //            Name = tagViewModel.Name,
+        //            Description = tagViewModel.Description,
+        //            UrlSlug = tagViewModel.UrlSlug,
+        //            Count = tagViewModel.Count
+        //        };
+
+        //        _tagService.Update(tag);
 
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, TagViewModel tagViewModel)
-        {
-            try
-            {
-                var tag = new Tag()
-                {
-                    Id = id,
-                    Name = tagViewModel.Name,
-                    Description = tagViewModel.Description,
-                    UrlSlug = tagViewModel.UrlSlug,
-                    Count = tagViewModel.Count
-                };
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-                _tagService.Update(tag);
-
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        public ActionResult Delete(int id)
-        {
-            try
-            {
-                var tag = _tagService.Find(id);
-                if (tag != null)
-                    _tagService.Delete(tag);
-            }
-            catch
-            {
-            }
-            return RedirectToAction("Index");
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    try
+        //    {
+        //        var tag = _tagService.Find(id);
+        //        if (tag != null)
+        //            _tagService.Delete(tag);
+        //    }
+        //    catch
+        //    {
+        //    }
+        //    return RedirectToAction("Index");
+        //}
 	}
 }

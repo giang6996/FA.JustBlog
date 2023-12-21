@@ -1,0 +1,36 @@
+﻿@model IEnumerable<FA.JustBlog.Models.CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="page-title">All Categories!</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="AdminCategory" asp-action="Create">Create New Category</a>
+</p>
+
+@foreach (var item in Model)
+{
+    <hr />
+
+    <div>
+        <h2><a asp-area="Admin" asp-controller="AdminCategory" asp-action="Detail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a></h2>
+    </div>
+
+    <div>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">@Html.DisplayFor(modelItem => item.Description)</p>
+    </div>
+
+
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
+    </div>
+
+}
+
+
+
+
+

@@ -10,7 +10,6 @@
     <a asp-action="Index">Show All Posts</a>
 </p>
 
-<ul>
     @foreach (var item in Model)
     {
         <hr />
@@ -44,12 +43,11 @@
             </p>
         </div>
 
-        <div>
+        @* <div>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
-        </div>
+        </div> *@
     }
-</ul>
 
 <hr />
 <div>
