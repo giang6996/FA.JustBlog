@@ -151,129 +151,129 @@ namespace FA.JustBlog.Controllers
 			return View(postVms.ToPagedList(pageNum, pageSize));
 		}
 
-        public ActionResult Create()
-        {
-            return View();
-        }
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                var title = collection["Title"].ToString();
-                var shortDescription = collection["ShortDescription"].ToString();
-                var imageUrl = collection["ImageUrl"].ToString();
-                var postContent = collection["PostContent"].ToString();
-                var urlSlug = collection["UrlSlug"].ToString();
-                var viewCount = collection["ViewCount"].ToString();
-                var rateCount = collection["RateCount"].ToString();
-                var totalRate = collection["TotalRate"].ToString();
-                var categoryId = collection["CategoryId"].ToString();
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create(IFormCollection collection)
+        //{
+        //    try
+        //    {
+        //        var title = collection["Title"].ToString();
+        //        var shortDescription = collection["ShortDescription"].ToString();
+        //        var imageUrl = collection["ImageUrl"].ToString();
+        //        var postContent = collection["PostContent"].ToString();
+        //        var urlSlug = collection["UrlSlug"].ToString();
+        //        var viewCount = collection["ViewCount"].ToString();
+        //        var rateCount = collection["RateCount"].ToString();
+        //        var totalRate = collection["TotalRate"].ToString();
+        //        var categoryId = collection["CategoryId"].ToString();
 
-                _postService.Add(new Post() {
-                    Title = title,
-                    ShortDescription = shortDescription,
-                    ImageUrl = imageUrl,
-                    UrlSlug = urlSlug,
-                    PostContent = postContent,
-                    Published = true,
-                    PublishedDate = DateTime.Now,
-                    ViewCount = int.Parse(viewCount),
-                    RateCount = int.Parse(rateCount),
-                    TotalRate = int.Parse(totalRate),
-                    CategoryId = int.Parse(categoryId)
-                });
+        //        _postService.Add(new Post() {
+        //            Title = title,
+        //            ShortDescription = shortDescription,
+        //            ImageUrl = imageUrl,
+        //            UrlSlug = urlSlug,
+        //            PostContent = postContent,
+        //            Published = true,
+        //            PublishedDate = DateTime.Now,
+        //            ViewCount = int.Parse(viewCount),
+        //            RateCount = int.Parse(rateCount),
+        //            TotalRate = int.Parse(totalRate),
+        //            CategoryId = int.Parse(categoryId)
+        //        });
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
-        // GET: AuthorsController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            try
-            {
-                var post = _postService.Find(id);
-                var postVm = new PostViewModel() { 
-                    Title = post.Title,
-                    ShortDescription = post.ShortDescription,
-                    ImageUrl = post.ImageUrl,
-                    PostContent = post.PostContent,
-                    UrlSlug =post.UrlSlug,
-                    Published = post.Published,
-                    PublishedDate = post.PublishedDate,
-                    ViewCount = post.ViewCount,
-                    RateCount = post.RateCount,
-                    TotalRate = post.TotalRate,
-                    CategoryId = post.CategoryId
-                };
+        //// GET: AuthorsController/Edit/5
+        //public ActionResult Edit(int id)
+        //{
+        //    try
+        //    {
+        //        var post = _postService.Find(id);
+        //        var postVm = new PostViewModel() { 
+        //            Title = post.Title,
+        //            ShortDescription = post.ShortDescription,
+        //            ImageUrl = post.ImageUrl,
+        //            PostContent = post.PostContent,
+        //            UrlSlug =post.UrlSlug,
+        //            Published = post.Published,
+        //            PublishedDate = post.PublishedDate,
+        //            ViewCount = post.ViewCount,
+        //            RateCount = post.RateCount,
+        //            TotalRate = post.TotalRate,
+        //            CategoryId = post.CategoryId
+        //        };
                     
-                if (postVm != null)
-                {
-                    return View(postVm);
-                }
-            }
-            catch
-            {
-            }
+        //        if (postVm != null)
+        //        {
+        //            return View(postVm);
+        //        }
+        //    }
+        //    catch
+        //    {
+        //    }
 
-            return RedirectToAction(nameof(Index));
-        }
+        //    return RedirectToAction(nameof(Index));
+        //}
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, PostViewModel postVm)
-        {
-            try
-            {
-                var post = new Post()
-                {
-                    Id = id,
-                    Title = postVm.Title,
-                    ShortDescription = postVm.ShortDescription,
-                    ImageUrl = postVm.ImageUrl,
-                    PostContent = postVm.PostContent,
-                    UrlSlug = postVm.UrlSlug,
-                    Published = postVm.Published,
-                    PublishedDate = postVm.PublishedDate,
-                    ViewCount = postVm.ViewCount,
-                    RateCount = postVm.RateCount,
-                    TotalRate = postVm.TotalRate,
-                    CategoryId = postVm.CategoryId,
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Edit(int id, PostViewModel postVm)
+        //{
+        //    try
+        //    {
+        //        var post = new Post()
+        //        {
+        //            Id = id,
+        //            Title = postVm.Title,
+        //            ShortDescription = postVm.ShortDescription,
+        //            ImageUrl = postVm.ImageUrl,
+        //            PostContent = postVm.PostContent,
+        //            UrlSlug = postVm.UrlSlug,
+        //            Published = postVm.Published,
+        //            PublishedDate = postVm.PublishedDate,
+        //            ViewCount = postVm.ViewCount,
+        //            RateCount = postVm.RateCount,
+        //            TotalRate = postVm.TotalRate,
+        //            CategoryId = postVm.CategoryId,
                     
-                };
+        //        };
 
-                _postService.Update(post);
+        //        _postService.Update(post);
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
 
 
-        public ActionResult Delete(int id)
-        {
-            try
-            {
-                var post = _postService.Find(id);
-                if (post != null)
-                    _postService.Delete(post);
-            }
-            catch
-            {
-            }
-            return RedirectToAction("Index");
-        }
+        //public ActionResult Delete(int id)
+        //{
+        //    try
+        //    {
+        //        var post = _postService.Find(id);
+        //        if (post != null)
+        //            _postService.Delete(post);
+        //    }
+        //    catch
+        //    {
+        //    }
+        //    return RedirectToAction("Index");
+        //}
 
         public ActionResult PostsByTag(string tagName, int? page)
         {

@@ -21,4 +21,8 @@
     <ProjectReference Include="..\FA.JustBlog.Core\FA.JustBlog.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+  </ItemGroup>
+
 </Project>

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FA.JustBlog.Models
 {
+    [Serializable]
     public class CategoryViewModel
     {
         public int Id { get; set; }

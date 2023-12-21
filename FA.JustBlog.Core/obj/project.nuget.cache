@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/2rvAE9Rj/hvpYfGznJdPmj7aIYHY/S+vFJlEmhM7XZx5XKM5R7ArBRoLxoqUA/JJ4OoQ9tQIxbeQBVvFLUfzw==",
+  "dgSpecHash": "4kpWSybbbcocYwrUyrTEBZJdmsL/UMIOpQkNvwjOy69WgE74ceX6TjkEiHdSvMqG313ztTgXfZJscjAZM+T5NQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\C#\\Repo\\FA.JustBlog\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
+  "projectFilePath": "D:\\Intern Fsoft (dotnet)\\Final Project - 2\\FA.JustBlog.Core\\FA.JustBlog.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

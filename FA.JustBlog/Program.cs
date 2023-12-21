@@ -3,6 +3,9 @@ using FA.JustBlog.Core.Models;
 using FA.JustBlog.Core;
 using FA.JustBlog.Controllers;
 using System.Text.RegularExpressions;
+using System.Web.Mvc;
+using FA.JustBlog.Areas;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -56,8 +59,21 @@ app.MapControllerRoute(
     defaults: new { controller = "Tag", action = "List" }
 );
 
+app.MapAreaControllerRoute(
+    name: "Admin",
+    areaName: "Admin",
+    pattern: "Admin/{controller=AdminHome}/{action=Index}/{id?}"
+    //new { action = "Index", id = UrlParameter.Optional }
+    );
+
+app.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller}/{action}/{id?}"
+    );
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

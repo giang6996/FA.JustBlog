@@ -1,0 +1,82 @@
+﻿@using FA.JustBlog.Models
+@using Newtonsoft.Json
+@model PagedList.IPagedList<FA.JustBlog.Models.PostViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@*<div class="container px-lg-2">*@
+<h1 class="page-title">All posts!</h1>
+
+<form asp-area="Admin" asp-controller="AdminPost" asp-action="Index" method="get">
+    <input type="text" name="title" placeholder="Search by title" />
+    <input type="submit" value="Search" />
+</form>
+
+<p>
+    <a asp-area="Admin" asp-controller="AdminPost" asp-action="Create">Create New Post</a>
+</p>
+
+<p>
+    <a asp-area="Admin" asp-controller="AdminPost" asp-action="LatestPost">Show Latest Posts</a>
+</p>
+@*</div>*@
+
+@await Html.PartialAsync("~/Areas/Admin/Views/AdminCategory/_CategoryDropdown.cshtml",JsonConvert.DeserializeObject<List<CategoryViewModel>>(TempData["AdminCategorys"].ToString()))
+
+
+@foreach (var item in Model)
+{
+    @*<div class="container px-lg-3">*@
+    <hr />
+    <div>
+        <h2><a asp-area="Admin" asp-controller="AdminPost" asp-action="Detail" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Title)</a></h2>
+    </div>
+
+    <div>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:larger">@Html.DisplayFor(modelItem => item.ShortDescription)</p>
+    </div>
+
+    <div>
+        <p style="font-size:smaller; color:gray">
+            Posted @Html.DisplayFor(modelItem => item.PublishedDate) with rate @Html.DisplayFor(modelItem => item.Rate) by
+            @Html.DisplayFor(modelItem => item.ViewCount) views
+        </p>
+    </div>
+
+    <div>
+
+
+        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
+    </div>
+    @*</div>*@
+}
+
+<div class="pagination">
+    @if (Model.HasPreviousPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+    }
+
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (Model.PageNumber == i)
+        {
+            <span>@i</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Index", new { page = i })">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+    }
+</div>
+
+

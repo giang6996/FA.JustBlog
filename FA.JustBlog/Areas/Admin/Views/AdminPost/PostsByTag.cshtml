@@ -1,0 +1,58 @@
+﻿@model PagedList.IPagedList<FA.JustBlog.Models.PostViewModel>
+
+@{
+    ViewData["Title"] = "PostsByTag";
+}
+
+@foreach (var item in Model)
+{
+    <hr />
+    <div>
+        <h2><a asp-area="Admin" asp-controller="AdminPost" asp-action="Detail" asp-route-id="@item.Id">@Html.ActionLink(item.Title, "DetailDate","Post" , new{year = item.PublishedDate.Year, month = item.PublishedDate.Month.ToString("00"), title = item.UrlSlug}, null)</a></h2>
+    </div>
+
+    <div>
+        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size:larger">@Html.DisplayFor(modelItem => item.ShortDescription)</p>
+    </div>
+
+    <div>
+        <p style="font-size:smaller; color:gray">
+            Posted @Html.DisplayFor(modelItem => item.PublishedDate) with rate @Html.DisplayFor(modelItem => item.Rate) by
+            @Html.DisplayFor(modelItem => item.ViewCount) views
+        </p>
+    </div>
+
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
+    </div>
+}
+
+<hr />
+<div>
+    <p>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</p>
+
+    @if (Model.HasPreviousPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })" class="paged-list">Previous</a>
+    }
+
+    @for (int i = 1; i <= Model.PageCount; i++)
+    {
+        if (Model.PageNumber == i)
+        {
+            <span class="paged-list">@i</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Index", new { page = i })" class="paged-list">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+    }
+</div>
+
+

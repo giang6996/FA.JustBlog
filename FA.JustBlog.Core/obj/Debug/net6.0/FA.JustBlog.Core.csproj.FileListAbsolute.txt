@@ -54,3 +54,17 @@ C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog.Core\obj\Debug\net6.0\r
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.pdb
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.genruntimeconfig.cache
 C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog.Core\obj\Debug\net6.0\ref\FA.JustBlog.Core.dll
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.deps.json
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.runtimeconfig.json
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.dll
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\bin\Debug\net6.0\FA.JustBlog.Core.pdb
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.csproj.AssemblyReference.cache
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.AssemblyInfoInputs.cache
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.AssemblyInfo.cs
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.csproj.CoreCompileInputs.cache
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.dll
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\refint\FA.JustBlog.Core.dll
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.pdb
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\FA.JustBlog.Core.genruntimeconfig.cache
+D:\Intern Fsoft (dotnet)\Final Project - 2\FA.JustBlog.Core\obj\Debug\net6.0\ref\FA.JustBlog.Core.dll
