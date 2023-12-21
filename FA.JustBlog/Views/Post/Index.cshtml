@@ -12,16 +12,16 @@
     <input type="submit" value="Search" />
 </form>
 
-    <p>
+    @* <p>
         <a asp-action="Create">Create New Post</a>
-    </p>
+    </p> *@
 
     <p>
         <a asp-action="LatestPost">Show Latest Posts</a>
     </p>
 @*</div>*@
 
-        @await Html.PartialAsync("~/Views/Category/_CategoryDropdown.cshtml",TempData["Categorys"])
+    @await Html.PartialAsync("~/Views/Category/_CategoryDropdown.cshtml",TempData["Categorys"])
 
 
     @foreach (var item in Model)
@@ -43,36 +43,37 @@
                 </p>
             </div>
 
-            <div>
-                
-
+            @* <div>
                 @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
-            </div>
+            </div> *@
         @*</div>*@     
     }
 
-<div class="pagination">
+<hr />
+<div>
+    <p>Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount</p>
+
     @if (Model.HasPreviousPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })">Previous</a>
+        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"] })" class="paged-list">Previous</a>
     }
 
     @for (int i = 1; i <= Model.PageCount; i++)
     {
         if (Model.PageNumber == i)
         {
-            <span>@i</span>
+            <span class="paged-list">@i</span>
         }
         else
         {
-            <a href="@Url.Action("Index", new { page = i })">@i</a>
+            <a href="@Url.Action("Index", new { page = i, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"]})" class="paged-list">@i</a>
         }
     }
 
     @if (Model.HasNextPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1, postCategory = TempData["CategoryName"], title = TempData["PostSearchName"] })">Next</a>
     }
 </div>
 

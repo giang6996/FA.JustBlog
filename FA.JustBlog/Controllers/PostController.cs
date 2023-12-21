@@ -34,11 +34,10 @@ namespace FA.JustBlog.Controllers
             }
             TempData["Categorys"] = categoryVms;
 
-
-
             if (postCategory != 0)
             {
                 posts = _postService.GetPostsByCategory(postCategory);
+                
 
             }
             else if (title != "abcd")
@@ -49,6 +48,9 @@ namespace FA.JustBlog.Controllers
             {
                 posts = _postService.GetAll();
             }
+
+            TempData["CategoryName"] = postCategory;
+            TempData["PostSearchName"] = title;
 
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
@@ -117,14 +119,12 @@ namespace FA.JustBlog.Controllers
                 return View(postVm);
             }
             return View();  
-
-            
         }
 
         public IActionResult LatestPost(int? page)
         {
 			int pageNum = page ?? 1;
-			int pageSize = 1;
+			int pageSize = 3;
 
 			IList<Post> sortedposts = _postService.GetLatestPost();
 
@@ -194,7 +194,7 @@ namespace FA.JustBlog.Controllers
         //    }
         //}
 
-        //// GET: AuthorsController/Edit/5
+        // GET: AuthorsController/Edit/5
         //public ActionResult Edit(int id)
         //{
         //    try
@@ -226,28 +226,15 @@ namespace FA.JustBlog.Controllers
         //    return RedirectToAction(nameof(Index));
         //}
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, PostViewModel postVm)
-        //{
-        //    try
-        //    {
-        //        var post = new Post()
-        //        {
-        //            Id = id,
-        //            Title = postVm.Title,
-        //            ShortDescription = postVm.ShortDescription,
-        //            ImageUrl = postVm.ImageUrl,
-        //            PostContent = postVm.PostContent,
-        //            UrlSlug = postVm.UrlSlug,
-        //            Published = postVm.Published,
-        //            PublishedDate = postVm.PublishedDate,
-        //            ViewCount = postVm.ViewCount,
-        //            RateCount = postVm.RateCount,
-        //            TotalRate = postVm.TotalRate,
-        //            CategoryId = postVm.CategoryId,
-                    
-        //        };
+                _postService.Update(post);
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
         //        _postService.Update(post);
 
@@ -258,8 +245,6 @@ namespace FA.JustBlog.Controllers
         //        return View();
         //    }
         //}
-
-
 
         //public ActionResult Delete(int id)
         //{
@@ -281,6 +266,19 @@ namespace FA.JustBlog.Controllers
             int pageSize = 3;
 
             var posts = _postService.GetPostsByTag(tagName);
+
+            var postVms = new List<PostViewModel>();
+            foreach (var post in posts)
+            {
+                postVms.Add(new PostViewModel()
+                {
+                    Id = post.Id,
+                    Title = post.Title,
+                    ShortDescription = post.ShortDescription,
+                    ImageUrl = post.ImageUrl,
+                    PostContent = post.PostContent,
+                    UrlSlug = post.UrlSlug,
+                    Published = post.Published,
 
             var postVms = new List<PostViewModel>();
             foreach (var post in posts)
