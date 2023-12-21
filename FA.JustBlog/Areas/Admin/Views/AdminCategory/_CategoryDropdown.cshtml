@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FA.JustBlog.Models.CategoryViewModel>
+
+<form id="myForm" method="get" action="~/Admin/AdminPost/Index" onchange="document.getElementById('myForm').submit();">
+
+    <select class="form-control" id="category" name="postCategory">
+        <option selected disabled>Select category</option>
+        <option value="0">Select all</option>
+        @foreach (var item in Model)
+        {
+            <option value="@item.Id" selected="@(item.Id == (int)TempData["CategoryName"])">@item.Name</option>
+        }
+    </select>
+</form>
+
