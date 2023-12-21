@@ -5,116 +5,197 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FA.JustBlog
 build_property.RootNamespace = FA.JustBlog
-build_property.ProjectDir = C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog\
+build_property.ProjectDir = C:\Users\nggng\Documents\FPT\Code\FA.JustBlog-Mock\FA.JustBlog\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\C#\Repo\FA.JustBlog\FA.JustBlog
+build_property.MSBuildProjectDirectory = C:\Users\nggng\Documents\FPT\Code\FA.JustBlog-Mock\FA.JustBlog
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Create.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminCategory/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminCategory/_CategoryDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yeVxfQ2F0ZWdvcnlEcm9wZG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/LatestPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XExhdGVzdFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminPost/PostsByTag.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Qb3N0XFBvc3RzQnlUYWcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminTag/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UYWdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminTag/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UYWdcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminTag/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UYWdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/AdminTag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5UYWdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Detail.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/DetailName.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/DetailName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGV0YWlsTmFtZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Edit.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/Index.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Category/_CategoryDropdown.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Category/_CategoryDropdown.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcX0NhdGVnb3J5RHJvcGRvd24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Home/Index.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Home/Privacy.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Create.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Detail.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/DetailDate.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/DetailDate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxEZXRhaWxEYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Edit.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/Index.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/LatestPost.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/LatestPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxMYXRlc3RQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Post/PostsByTag.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Post/PostsByTag.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxQb3N0c0J5VGFnLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/Components/TagList/Default.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Shared/Components/TagList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnTGlzdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/Error.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_PartialFooter.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Shared/_PartialFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Create.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Tag/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Detail.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Tag/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Edit.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Tag/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Tag/Index.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Tag/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/_ViewImports.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/_ViewStart.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/C\#/Repo/FA.JustBlog/FA.JustBlog/Views/Shared/_Layout.cshtml]
+[C:/Users/nggng/Documents/FPT/Code/FA.JustBlog-Mock/FA.JustBlog/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5fmvclbnwr

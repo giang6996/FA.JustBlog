@@ -7,6 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Areas\Admin\Views\AdminCategory\Create.cshtml" />
+    <None Include="Areas\Admin\Views\AdminCategory\Detail.cshtml" />
+    <None Include="Areas\Admin\Views\AdminCategory\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\AdminCategory\Index.cshtml" />
+    <None Include="Areas\Admin\Views\AdminCategory\_CategoryDropdown.cshtml" />
+    <None Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\Create.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\Detail.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\Index.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\LatestPost.cshtml" />
+    <None Include="Areas\Admin\Views\AdminPost\PostsByTag.cshtml" />
+    <None Include="Areas\Admin\Views\AdminTag\Create.cshtml" />
+    <None Include="Areas\Admin\Views\AdminTag\Detail.cshtml" />
+    <None Include="Areas\Admin\Views\AdminTag\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\AdminTag\Index.cshtml" />
+    <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <None Include="Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Identity.Samples" Version="1.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
