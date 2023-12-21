@@ -6,9 +6,9 @@
 
 <h1 class="page-title">All Tags!</h1>
 
-<p>
+@* <p>
     <a asp-action="Create">Create New Tag</a>
-</p>
+</p> *@
 
 @foreach (var item in Model)
 {
@@ -22,11 +22,10 @@
         <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">@Html.DisplayFor(modelItem => item.Description)</p>
     </div>
 
-
-    <div>
+    @* <div>
         @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
         @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
-    </div>
+    </div> *@
 
 }
 

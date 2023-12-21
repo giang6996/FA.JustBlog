@@ -6,9 +6,9 @@
 
 <h1 class="page-title">All Categories!</h1>
 
-<p>
+@* <p>
     <a asp-action="Create">Create New Category</a>
-</p>
+</p> *@
 
 @foreach (var item in Model)
 {
@@ -23,10 +23,10 @@
     </div>
 
 
-    <div>
+    @* <div>
         @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
         @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
-    </div>
+    </div> *@
 
 }
 
