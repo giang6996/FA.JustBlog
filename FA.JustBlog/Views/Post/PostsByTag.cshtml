@@ -22,10 +22,10 @@
         </p>
     </div>
 
-    <div>
+    @* <div>
         @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
         @Html.ActionLink("Delete", "Delete", new { id=item.Id }, new { onclick = "return confirm('Are you sure?')" })
-    </div>
+    </div> *@
 }
 
 <hr />
@@ -34,7 +34,7 @@
 
     @if (Model.HasPreviousPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber - 1 })" class="paged-list">Previous</a>
+        <a href="@Url.Action("PostsByTag", new { page = Model.PageNumber - 1 })" class="paged-list">Previous</a>
     }
 
     @for (int i = 1; i <= Model.PageCount; i++)
@@ -45,13 +45,13 @@
         }
         else
         {
-            <a href="@Url.Action("Index", new { page = i })" class="paged-list">@i</a>
+            <a href="@Url.Action("PostsByTag", new { page = i })" class="paged-list">@i</a>
         }
     }
 
     @if (Model.HasNextPage)
     {
-        <a href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">Next</a>
+        <a href="@Url.Action("PostsByTag", new { page = Model.PageNumber + 1 })">Next</a>
     }
 </div>
 
